@@ -1,6 +1,7 @@
 .ghx-print-card-body .ghx-print-small .ghx-card {
   margin: 5px;
   width: 460px !important;
+  height: 200px !important;
 }
 
 #jira.adg3 .ghx-label-1 {

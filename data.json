@@ -1,49 +1,9 @@
 [{
-  "id": 266,
-  "type": "story",
-  "owner": "Nick",
-  "title": "[TPBI] Taking a snapshot for Pre-Prod and implement removing data feature for its",
-  "point": 3,
-  "status": "In Progress",
-  "priority": "medium"
-}, {
-  "id": 264,
-  "type": "story",
-  "owner": "Toan",
-  "title": "[TPBI] Removing all data from DEV AURORA rdv database prior to 2018",
-  "point": 3,
-  "status": "In Progress",
-  "priority": "medium"
-}, {
-  "id": 259,
-  "type": "story",
-  "owner": "Toan",
-  "title": "[TPBI] Removing data from DEV AURORA database rdv",
-  "point": 3,
-  "status": "blocked",
-  "priority": "medium"
-}, {
-  "id": 237,
-  "type": "bug",
-  "owner": "NamT",
-  "title": "[TPBI DEV Data WareHouse] AWS Aurora Database DEV has issue",
-  "point": 5,
-  "status": "in progress",
-  "priority": "medium"
-}, {
-  "id": 258,
+  "id": 271,
   "type": "story",
   "owner": "NamT",
-  "title": "[TPBI] Removing data from DEV AURORA database stg_arc_001",
-  "point": 1,
-  "status": "blocked",
-  "priority": "medium"
-}, {
-  "id": 263,
-  "type": "story",
-  "owner": "NamT",
-  "title": "[[TPBI] Removing all data from DEV AURORA stg_arc_001 & rpt database prior to 2018",
-  "point": 1,
-  "status": "tested",
-  "priority": "medium"
+  "title": "[DOMO] Creating an AWS Lambda Function to create user via DOMO API",
+  "point": 3,
+  "priority": "medium",
+  "createdDate": "23/08/2019"
 }]
