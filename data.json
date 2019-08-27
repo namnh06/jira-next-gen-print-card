@@ -1,9 +1,25 @@
 [{
-  "id": 271,
+  "id": 272,
   "type": "story",
-  "owner": "NamT",
-  "title": "[DOMO] Creating an AWS Lambda Function to create user via DOMO API",
+  "owner": "Nick",
+  "title": "[DOMO] Gathering document to implement Single Sign-On (SSO) between DOMO & Azure Active Directory",
   "point": 3,
   "priority": "medium",
-  "createdDate": "23/08/2019"
+  "createdDate": "27/08/2019"
+}, {
+  "id": 273,
+  "type": "story",
+  "owner": "Cong",
+  "title": "[TPBI] Researching TPBI system",
+  "point": 3,
+  "priority": "medium",
+  "createdDate": "27/08/2019"
+}, {
+  "id": 274,
+  "type": "story",
+  "owner": "Cong",
+  "title": "[DOMO] Researching about DOMO",
+  "point": 5,
+  "priority": "medium",
+  "createdDate": "27/08/2019"
 }]

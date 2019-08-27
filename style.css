@@ -16475,8 +16475,9 @@ table.aui.aui-restfultable>thead>tr>th {
 
 .ghx-print-card-body .ghx-print-small .ghx-card {
   height: 233px;
-  padding: 20px 20px 20px 20px;
+  padding: 10px;
   width: 335px;
+
 }
 
 .ghx-print-card-body .ghx-print-small .ghx-card-header {

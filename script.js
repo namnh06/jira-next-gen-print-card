@@ -18,6 +18,10 @@ app.filter('avatar', function () {
     TOAN: {
       name: 'TOAN',
       url: 'https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5d39064d6508dd0c25fe3940/52a188ef-aeac-4d86-91d8-46eda6bf7228/128?size=48&s=48'
+    },
+    CONG: {
+      name: 'CONG',
+      url: 'https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5d649404e90c310c1722276b/e044cfe4-bba4-4e3b-bb0a-7e49f4d51663/128?size=48&s=48'
     }
   };
   return function (input) {
@@ -28,6 +32,10 @@ app.filter('avatar', function () {
         return USER.NAMT.url;
       case USER.TOAN.name:
         return USER.TOAN.url;
+      case USER.CONG.name:
+        return USER.CONG.url;
+      default:
+        return '';
     }
   }
 });
