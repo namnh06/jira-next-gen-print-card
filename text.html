@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="webkit chrome">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Yuriqa Board - Agile Board - Jira</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body id="jira" class="ghx-print-card-body" ng-app="printJiraApp">
+    <div class="ghx-print-content-sizing ghx-print-small" id="Print-Section" ng-controller="mainController">
+        <div class="ghx-card" ng-repeat="story in stories">
+            <div class="ghx-card-content">
+                <div class="ghx-card-header">
+                    <div class="ghx-card-icon"><img ng-src="{{story.type | type}}">
+                    </div>
+                    <div class="ghx-card-icon"><img
+                            src="https://yuriqa.atlassian.net/images/icons/priorities/medium.svg"></div>
+                    <div class="ghx-card-key">YWA-{{story.id}}</div>
+                    <div class="ghx-row-end"><img ng-src="{{story.owner | avatar}}" class="ghx-avatar-img"></div>
+                </div>
+                <div class="ghx-card-summary">{{story.title}}
+                </div>
+                <div class="ghx-card-extra-fields">
+                    <div class="ghx-card-xfield-row">
+                        <div class="ghx-card-xfield-label">Point{{story.point > 1 ? 's' : ''}}</div>
+                        <div class="ghx-card-xfield-value" style="font-weight: bolder;">{{story.point}}</div>
+                    </div>
+                </div>
+                <div class="ghx-card-footer"><span
+                        class="aui-label ghx-label-6 ghx-card-lozenges-2">{{story.owner | uppercase}}</span>
+                    <div class="ghx-row-end">
+                        <div style="font-size: 13px;">
+                            Created: {{ story.createdDate | uppercase}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
