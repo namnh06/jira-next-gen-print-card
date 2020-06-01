@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Yuriqa Board - Agile Board - Jira</title>
+    <title>yuriQa's Scrum Board - Jira Software Cloud</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
@@ -15,26 +15,32 @@
         <div class="ghx-card" ng-repeat="story in stories">
             <div class="ghx-card-content">
                 <div class="ghx-card-header">
-                    <div class="ghx-card-icon"><img ng-src="{{story.type | type}}">
+                    <div class="ghx-card-icon">
+                        <img ng-src="{{story.fields.issuetype.name | type}}">
                     </div>
                     <div class="ghx-card-icon"><img
-                            src="https://yuriqa.atlassian.net/images/icons/priorities/medium.svg"></div>
-                    <div class="ghx-card-key">YWA-{{story.id}}</div>
-                    <div class="ghx-row-end"><img ng-src="{{story.owner | avatar}}" class="ghx-avatar-img"></div>
+                            src="https://yuriqa.atlassian.net/images/icons/priorities/medium.svg">
+                    </div>
+                    <div class="ghx-card-key">{{story.key}}</div>
+                    <div class="ghx-row-end"><img ng-src="{{story.fields.assignee.displayName | avatar}}"
+                            class="ghx-avatar-img"></div>
                 </div>
-                <div class="ghx-card-summary">{{story.title}}
+                <div class="ghx-card-summary">{{story.fields.summary}}
                 </div>
                 <div class="ghx-card-extra-fields">
                     <div class="ghx-card-xfield-row">
-                        <div class="ghx-card-xfield-label">Point{{story.point > 1 ? 's' : ''}}</div>
-                        <div class="ghx-card-xfield-value" style="font-weight: bolder;">{{story.point}}</div>
+                        <div class="ghx-card-xfield-label">Point{{story.fields.customfield_10016 > 1 ? 's' : ''}}</div>
+                        <div class="ghx-card-xfield-value" style="font-weight: bolder;">
+                            {{story.fields.customfield_10016}}
+                        </div>
                     </div>
                 </div>
-                <div class="ghx-card-footer"><span
-                        class="aui-label ghx-label-6 ghx-card-lozenges-2">{{story.owner | uppercase}}</span>
+                <div class="ghx-card-footer">
+                    <span
+                        class="aui-label ghx-label-6 ghx-card-lozenges-2">{{story.fields.assignee.displayName | uppercase}}</span>
                     <div class="ghx-row-end">
                         <div style="font-size: 13px;">
-                            Created: {{ story.createdDate | uppercase}}
+                            Created: {{ story.fields.created | date : 'dd/M/yyyy'}}
                         </div>
                     </div>
                 </div>
